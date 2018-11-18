@@ -3,11 +3,10 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     
-    <h2>Hello, {{name}}</h2>
+    <h2>Hello, {{name}}, i wang fack liu qiong</h2>
     
   </div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
