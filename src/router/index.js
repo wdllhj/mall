@@ -11,41 +11,41 @@ Vue.use(Router)
 
 export default new Router({
     routes: [
-    {
-        path: '/',
-        name: '首页',
-        component: Index
-    },
+        {
+            path: '/',
+            name: 'index',
+            component: Index
+        },
 
-    {
-        path: '/tag',
-        name: '分类',
-        component: Tag
-    },
+        {
+            path: '/tag',
+            name: 'tag',
+            component: Tag
+        },
 
-    {
-        path: '/shopping',
-        name: '购物车',
-        component: ShoppingCart
-    },
+        {
+            path: '/shopping',
+            name: 'shaopping',
+            component: ShoppingCart
+        },
 
-    {
-        path: '/user/:userid',
-        name: '个人中心',
-        component: User,
-        children: [
-            {
-                path: 'order',
-                component: Order
-            } 
-        ]
-    },
+        {
+            path: '/user/:userid',
+            name: 'user',
+            component: User,
+            children: [
+                {
+                    path: 'order',
+                    component: Order
+                } 
+            ]
+        },
 
-    {
-        path: '',
-        name: '404, 迷路了',
-        component: NoData
-    }
+        {
+            path: '',
+            name: '404, 迷路了',
+            component: NoData
+        }
 
     ]
 })
