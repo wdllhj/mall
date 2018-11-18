@@ -1,6 +1,8 @@
 # mall
-> A Vue.js project
-> mall for test
+> 通过商城项目学习VUE && NODE
+
+## 当前分支描述
+> 练习：动态路由
 
 ## Build Setup
 
