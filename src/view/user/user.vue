@@ -1,19 +1,17 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    
-    <h2>Hello, {{name}}, i wang fack liu qiong</h2>
-    
+    <h1>欢迎, {{ name }}！ 想要点什么？</h1>
+    <router-link to="/user/order">我的订单</router-link>
+    <router-view></router-view>
   </div>
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'User',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      name : 'wendongliang'
+      msg: '个人中心',
+      name: 'wendongliang'
     }
   }
 }
